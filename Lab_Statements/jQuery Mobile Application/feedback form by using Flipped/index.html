@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery Mobile & jQuery CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Feedback Page -->
+<div data-role="page" id="feedbackPage">
+  <div data-role="header">
+    <h1>Feedback Form</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <form>
+      <label for="service">Service Quality:</label>
+      <select name="service" id="service" data-role="flipswitch">
+        <option value="good">Good</option>
+        <option value="bad">Bad</option>
+      </select>
+
+      <label for="recommend">Would you recommend us?</label>
+      <select name="recommend" id="recommend" data-role="flipswitch">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="comment">Additional Comments:</label>
+      <textarea name="comment" id="comment" placeholder="Write your feedback here..."></textarea>
+
+      <input type="submit" value="Submit Feedback">
+    </form>
+  </div>
+
+  <div data-role="footer">
+    <h4>&copy; 2025 Feedback Portal</h4>
+  </div>
+</div>
+
+</body>
+</html>

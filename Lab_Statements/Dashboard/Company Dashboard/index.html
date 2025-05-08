@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery + jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+
+    <div data-role="header">
+        <h1>CorpSuite</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active">Home</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <input type="search" id="search" placeholder="Search announcements, teams...">
+
+        <h2>Latest Announcements</h2>
+        <ul data-role="listview">
+            <li><a href="#"><h2>Annual Townhall</h2><p>Join us for updates and Q&A.</p></a></li>
+            <li><a href="#"><h2>New HR Policies</h2><p>Updated leave and work-from-home guidelines.</p></a></li>
+            <li><a href="#"><h2>IT Maintenance</h2><p>Planned downtime this weekend.</p></a></li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Departments Page -->
+<div data-role="page" id="departments">
+    <div data-role="header">
+        <h1>Departments</h1>
+        <a href="#home" data-icon="home">Home</a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li><a href="#"><h2>Engineering</h2><p>Product development and support</p></a></li>
+            <li><a href="#"><h2>Marketing</h2><p>Campaigns and branding</p></a></li>
+            <li><a href="#"><h2>Human Resources</h2><p>People and culture</p></a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Profile Page -->
+<div data-role="page" id="profile">
+    <div data-role="header">
+        <h1>Employee Profile</h1>
+        <a href="#home" data-icon="home">Home</a>
+    </div>
+    <div data-role="content">
+        <p>Welcome, [Employee Name]!</p>
+        <p>Employee ID: C123456</p>
+        <p>Team: Engineering | My Tasks | Settings</p>
+    </div>
+</div>
+
+</body>
+</html>

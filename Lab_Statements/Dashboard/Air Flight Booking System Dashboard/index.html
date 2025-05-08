@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Booking Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery + jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+
+    <div data-role="header">
+        <h1>FlyHigh</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active">Home</a></li>
+                <li><a href="#bookings">My Bookings</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <input type="search" id="search" placeholder="Search flights, destinations...">
+
+        <h2>Top Deals</h2>
+        <ul data-role="listview">
+            <li><a href="#"><h2>Delhi to Mumbai</h2><p>From ₹2999 - Direct</p></a></li>
+            <li><a href="#"><h2>Bangalore to Goa</h2><p>From ₹1999 - 1 Stop</p></a></li>
+            <li><a href="#"><h2>Kolkata to Chennai</h2><p>From ₹2499 - Direct</p></a></li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Bookings Page -->
+<div data-role="page" id="bookings">
+    <div data-role="header">
+        <h1>My Bookings</h1>
+        <a href="#home" data-icon="home">Home</a>
+    </div>
+    <div data-role="content">
+        <p>You have no upcoming bookings.</p>
+    </div>
+</div>
+
+<!-- Profile Page -->
+<div data-role="page" id="profile">
+    <div data-role="header">
+        <h1>User Profile</h1>
+        <a href="#home" data-icon="home">Home</a>
+    </div>
+    <div data-role="content">
+        <p>Welcome, Traveler!</p>
+        <p>Frequent Flyer ID: FH123456</p>
+        <p>Past Trips | Wallet | Settings</p>
+    </div>
+</div>
+
+</body>
+</html>

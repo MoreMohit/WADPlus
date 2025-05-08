@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Portal Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery + jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+
+    <div data-role="header">
+        <h1>MyCollege</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <input type="search" id="search" placeholder="Search courses, announcements...">
+
+        <h2>Important Announcements</h2>
+        <ul data-role="listview">
+            <li><a href="#"><h2>Midterm Exam Schedule</h2><p>Check the dates for upcoming exams.</p></a></li>
+            <li><a href="#"><h2>Library New Arrivals</h2><p>Explore newly added books and journals.</p></a></li>
+            <li><a href="#"><h2>Workshop Registration</h2><p>Join our tech workshop this weekend.</p></a></li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Courses Page -->
+<div data-role="page" id="courses">
+    <div data-role="header">
+        <h1>Your Courses</h1>
+        <a href="#home" data-icon="home">Home</a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li><a href="#"><h2>Data Structures</h2><p>Prof. Sharma</p></a></li>
+            <li><a href="#"><h2>Operating Systems</h2><p>Prof. Mehta</p></a></li>
+            <li><a href="#"><h2>Web Development</h2><p>Prof. Singh</p></a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Profile Page -->
+<div data-role="page" id="profile">
+    <div data-role="header">
+        <h1>Student Profile</h1>
+        <a href="#home" data-icon="home">Home</a>
+    </div>
+    <div data-role="content">
+        <p>Welcome, Student Name!</p>
+        <p>Roll No: 123456</p>
+        <p>Department: Computer Science</p>
+        <p>Settings | Grades | Attendance</p>
+    </div>
+</div>
+
+</body>
+</html>

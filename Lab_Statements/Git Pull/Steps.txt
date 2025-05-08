@@ -1,0 +1,33 @@
+Step 1: Create GitHub Account and Repo
+(Same as before – Sign up and create a new repository)
+
+🔹 Step 2: Clone the Repo to Local
+git clone https://github.com/your-username/my-repo.git
+cd my-repo
+
+🔹 Step 3: Make Changes and Push
+# Make changes to a file
+git add .
+git commit -m "Updated content"
+git push origin master
+
+🔹 Step 4: Create a New Branch and Switch to It
+git branch new-feature
+git checkout new-feature
+# OR directly
+git checkout -b new-feature
+
+🔹 Step 5: Make Changes in New Branch
+# Modify files
+git add .
+git commit -m "Feature added"
+git push origin new-feature
+
+🔹 Step 6: Merge Branch to Main (on local)
+git checkout master
+git pull origin master
+git merge new-feature
+git push origin master
+
+🔹 Step 7: Pull Updates from GitHub (if someone else pushed)
+git pull origin master

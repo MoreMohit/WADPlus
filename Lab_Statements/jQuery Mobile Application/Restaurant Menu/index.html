@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restaurant Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery + jQuery Mobile CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <div data-role="header" data-theme="b">
+            <h1>Foodie's Corner</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2>Menu</h2>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#pizza">Pizza</a></li>
+                <li><a href="#burger">Burger</a></li>
+                <li><a href="#pasta">Pasta</a></li>
+            </ul>
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; 2025 Foodie's Corner</h4>
+        </div>
+    </div>
+
+    <!-- Pizza Page -->
+    <div data-role="page" id="pizza">
+        <div data-role="header" data-theme="b">
+            <a href="#home" data-icon="back">Back</a>
+            <h1>Pizza</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&h=200&w=300"
+                alt="Person Holding Pizza" style="width:300px; height:200px;">
+            <p><strong>Price:</strong> ₹250</p>
+            <p><strong>Description:</strong> Delicious cheese pizza with Italian herbs.</p>
+        </div>
+    </div>
+
+    <!-- Burger Page -->
+    <div data-role="page" id="burger">
+        <div data-role="header" data-theme="b">
+            <a href="#home" data-icon="back">Back</a>
+            <h1>Burger</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&h=200&w=300"
+                alt="Burger" style="width:300px; height:200px;">
+
+            <p><strong>Price:</strong> ₹150</p>
+            <p><strong>Description:</strong> Crispy chicken burger with lettuce and mayo.</p>
+        </div>
+    </div>
+
+    <!-- Pasta Page -->
+    <div data-role="page" id="pasta">
+        <div data-role="header" data-theme="b">
+            <a href="#home" data-icon="back">Back</a>
+            <h1>Pasta</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&h=200&w=300"
+                alt="Macaroni" style="width:300px; height:200px;">
+            <p><strong>Price:</strong> ₹200</p>
+            <p><strong>Description:</strong> Creamy white sauce pasta with veggies.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

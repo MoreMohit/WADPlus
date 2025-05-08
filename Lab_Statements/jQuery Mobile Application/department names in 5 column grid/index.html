@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Department Info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery Mobile & jQuery CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .ui-grid-d .ui-block-a,
+    .ui-grid-d .ui-block-b,
+    .ui-grid-d .ui-block-c,
+    .ui-grid-d .ui-block-d,
+    .ui-grid-d .ui-block-e {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Main Page -->
+<div data-role="page" id="mainPage">
+  <div data-role="header">
+    <h1>Departments</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div class="ui-grid-d">
+      <div class="ui-block-a"><a href="#cse" class="ui-btn">CSE</a></div>
+      <div class="ui-block-b"><a href="#it" class="ui-btn">IT</a></div>
+      <div class="ui-block-c"><a href="#entc" class="ui-btn">ENTC</a></div>
+      <div class="ui-block-d"><a href="#mech" class="ui-btn">Mech</a></div>
+      <div class="ui-block-e"><a href="#civil" class="ui-btn">Civil</a></div>
+    </div>
+  </div>
+
+  <div data-role="footer">
+    <h4>&copy; 2025 Department Info</h4>
+  </div>
+</div>
+
+<!-- CSE Page -->
+<div data-role="page" id="cse">
+  <div data-role="header"><h1>CSE</h1></div>
+  <div role="main" class="ui-content">
+    <p>Computer Science & Engineering focuses on computing, programming, and software design.</p>
+  </div>
+  <a href="#mainPage" data-role="button">Back</a>
+</div>
+
+<!-- IT Page -->
+<div data-role="page" id="it">
+  <div data-role="header"><h1>IT</h1></div>
+  <div role="main" class="ui-content">
+    <p>Information Technology covers network, databases, and web development technologies.</p>
+  </div>
+  <a href="#mainPage" data-role="button">Back</a>
+</div>
+
+<!-- ENTC Page -->
+<div data-role="page" id="entc">
+  <div data-role="header"><h1>ENTC</h1></div>
+  <div role="main" class="ui-content">
+    <p>Electronics and Telecommunication Engineering involves signal processing and embedded systems.</p>
+  </div>
+  <a href="#mainPage" data-role="button">Back</a>
+</div>
+
+<!-- Mech Page -->
+<div data-role="page" id="mech">
+  <div data-role="header"><h1>Mech</h1></div>
+  <div role="main" class="ui-content">
+    <p>Mechanical Engineering is focused on mechanics, design, and manufacturing systems.</p>
+  </div>
+  <a href="#mainPage" data-role="button">Back</a>
+</div>
+
+<!-- Civil Page -->
+<div data-role="page" id="civil">
+  <div data-role="header"><h1>Civil</h1></div>
+  <div role="main" class="ui-content">
+    <p>Civil Engineering deals with infrastructure, construction, and structural design.</p>
+  </div>
+  <a href="#mainPage" data-role="button">Back</a>
+</div>
+
+</body>
+</html>

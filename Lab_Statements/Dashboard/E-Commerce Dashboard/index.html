@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Commerce Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery + jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+
+    <div data-role="header">
+        <h1>ShopEasy</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active">Home</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <input type="search" id="search" placeholder="Search for products...">
+
+        <h2>Featured Products</h2>
+        <ul data-role="listview">
+            <li><a href="#"><h2>Smartphone</h2><p>$299</p></a></li>
+            <li><a href="#"><h2>Headphones</h2><p>$49</p></a></li>
+            <li><a href="#"><h2>Shoes</h2><p>$79</p></a></li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Cart Page -->
+<div data-role="page" id="cart">
+    <div data-role="header">
+        <h1>Your Cart</h1>
+        <a href="#home" data-icon="home">Home</a>
+    </div>
+    <div data-role="content">
+        <p>Your cart is empty.</p>
+    </div>
+</div>
+
+<!-- Profile Page -->
+<div data-role="page" id="profile">
+    <div data-role="header">
+        <h1>Profile</h1>
+        <a href="#home" data-icon="home">Home</a>
+    </div>
+    <div data-role="content">
+        <p>Welcome, User!</p>
+        <p>Order History | Address | Settings</p>
+    </div>
+</div>
+
+</body>
+</html>
